@@ -10,7 +10,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/markbates/goth"
+	"github.com/machine-report/goth"
 	"golang.org/x/oauth2"
 )
 
@@ -25,6 +25,12 @@ func New(clientKey, secret, callbackURL string, scopes ...string) *Provider {
 		Secret:       secret,
 		CallbackURL:  callbackURL,
 		providerName: "google",
+
+		// We can get a refresh token from Google by this option.
+		// See https://developers.google.com/identity/protocols/oauth2/openid-connect#access-type-param
+		authCodeOptions: []oauth2.AuthCodeOption{
+			oauth2.AccessTypeOffline,
+		},
 	}
 	p.config = newConfig(p, scopes)
 	return p
