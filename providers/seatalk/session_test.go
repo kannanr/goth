@@ -1,10 +1,11 @@
 package seatalk_test
 
 import (
-	"github.com/markbates/goth"
-	"github.com/markbates/goth/providers/seatalk"
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/kannanr/goth"
+	"github.com/kannanr/goth/providers/seatalk"
+	"github.com/stretchr/testify/assert"
 )
 
 func Test_Implements_Session(t *testing.T) {

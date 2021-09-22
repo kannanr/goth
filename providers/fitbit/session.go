@@ -5,7 +5,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/markbates/goth"
+	"github.com/kannanr/goth"
 	"golang.org/x/oauth2"
 )
 

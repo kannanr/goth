@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt"
+	"github.com/kannanr/goth"
 	"github.com/lestrrat-go/jwx/jwk"
-	"github.com/markbates/goth"
 	"golang.org/x/oauth2"
 )
 

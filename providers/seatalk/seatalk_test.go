@@ -1,11 +1,12 @@
 package seatalk_test
 
 import (
-	"github.com/markbates/goth"
-	"github.com/markbates/goth/providers/seatalk"
-	"github.com/stretchr/testify/assert"
 	"os"
 	"testing"
+
+	"github.com/kannanr/goth"
+	"github.com/kannanr/goth/providers/seatalk"
+	"github.com/stretchr/testify/assert"
 )
 
 func Test_New(t *testing.T) {
