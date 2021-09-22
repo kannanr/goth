@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/machine-report/goth"
+	"github.com/kannanr/goth"
 )
 
 // Session stores data during the auth process with Google.

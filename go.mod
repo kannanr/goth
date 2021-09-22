@@ -1,4 +1,4 @@
-module github.com/machine-report/goth
+module github.com/kannanr/goth
 
 go 1.15
 
